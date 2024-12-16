@@ -1,28 +1,25 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'homepage.dart';
 
-
-import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const FrontScreen(),
+      home: FrontScreen(),
     );
   }
 }
 
 class FrontScreen extends StatelessWidget {
-  const FrontScreen({Key? key}) : super(key: key);
+   const FrontScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +38,7 @@ class FrontScreen extends StatelessWidget {
             const SizedBox(height: 30),
 
             // Title
-            Text(
+            const Text(
               'Tic Tac Toe',
               style: TextStyle(
                 color: Colors.white,
